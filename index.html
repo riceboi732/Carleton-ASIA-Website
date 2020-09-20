@@ -8,18 +8,15 @@ page<!DOCTYPE html>
 		<style type="text/css">
 			
 	* {
-		margin: 0;
-		padding: 0;
-	}
+				margin: 0;
+				padding: 0;
+			}
 
 	body {
                 font-family: Open Sans, Arial, sans-serif;
 		overflow-x: hidden;
             }
 	.menu-btn {
-		position: fixed;
-		top: 5px;
-		left: 5px;
                 display: block;
                 width: 48px;
                 height: 36px;
@@ -50,10 +47,10 @@ page<!DOCTYPE html>
             }	
 		nav {
                 position: fixed;
-                z-index: -1;
+                z-index: 1000;
                 top: 0;
                 bottom: 0;
-                width: 0px;
+                width: 200px;
                 background-color: rgba(0,0,0,0);
                 transform: translate3d(-200px, 0, 0);
                 transition: transform 0.4s ease;
@@ -76,10 +73,10 @@ page<!DOCTYPE html>
             .nav-toggle-btn {
                 display: block;
                 position: absolute;
-                left: 0px;
-                width: 0px;
-                height: 0px;
-                background-color: rgba(0, 0, 0, 0);
+                left: 200px;
+                width: 40px;
+                height: 40px;
+                background-color: #666;
             }
 		.content {
                 padding-top: 300px;
