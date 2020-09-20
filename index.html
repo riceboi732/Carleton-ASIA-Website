@@ -170,20 +170,13 @@ page<!DOCTYPE html>
         (function() {
             
             var bodyEl = $('body'),
-                navToggleBtn = bodyEl.find('.nav-toggle-btn');
-            
-            navToggleBtn.on('click', function(e) {
-                bodyEl.toggleClass('active-nav');
+                navToggleBtn = bodyEl.find('.nav-toggle-btn');                        
+            var menuBtn = $('a.menu-btn'),
+                menuBtnBlock = menuBtn.find('div.menu-btn-block');            
+                menuBtn.on('click', function(e) {
+                menuBtnBlock.toggleClass('active');
+		bodyEl.toggleClass('active-nav');
                 e.preventDefault();
-            });
-		
-            (function() {
-                
-                var menuBtn = $('a.menu-btn'),
-                    menuBtnBlock = menuBtn.find('div.menu-btn-block');
-                
-                menuBtn.on('click', function() {
-                    menuBtnBlock.toggleClass('active');
                 });
 
             })();
