@@ -54,7 +54,7 @@ page<!DOCTYPE html>
                 top: 0;
                 bottom: 0;
                 width: 200px;
-                background-color: rgba(0,0,0,0);
+                background-color: #036;
                 transform: translate3d(-200px, 0, 0);
                 transition: transform 0.4s ease;
             }
@@ -71,6 +71,19 @@ page<!DOCTYPE html>
                 text-align: center;
                 color: #fff;
                 padding: 10px 0;
+            }
+            
+            .nav-toggle-btn {
+                display: block;
+                position: absolute;
+                left: 200px;
+                width: 40px;
+                height: 40px;
+                background-color: #666;
+            }
+            
+            .active-nav .content {
+                transform: translate3d(200px, 0, 0);
             }
             
 		.content {
@@ -133,7 +146,7 @@ page<!DOCTYPE html>
             <div class="menu-btn-block middle"></div>
             <div class="menu-btn-block bottom"></div>
         </a>
-		<nav>
+	<nav>
             
             <a href="#" class="nav-toggle-btn"></a>
             
