@@ -169,15 +169,18 @@ page<!DOCTYPE html>
         
         (function() {
             
-	var menuBtn = $('a.menu-btn'),
-	menuBtnBlock = menuBtn.find('div.menu-btn-block');
-	var bodyEl = $('body'),
-        menuBtnBlock = bodyEl.find('.nav-toggle-btn');
+            var bodyEl = $('body'),
+                navToggleBtn = bodyEl.find('.nav-toggle-btn');
             
-            menuBtnBlock.on('click', function(e) {
+            navToggleBtn.on('click', function(e) {
                 bodyEl.toggleClass('active-nav');
                 e.preventDefault();
             });
+		
+            (function() {
+                
+                var menuBtn = $('a.menu-btn'),
+                    menuBtnBlock = menuBtn.find('div.menu-btn-block');
                 
                 menuBtn.on('click', function() {
                     menuBtnBlock.toggleClass('active');
