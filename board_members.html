@@ -1,68 +1,61 @@
-<!DOCTYPE html>
 <html>
-  
- <style>
-img.resize {
-  max-width:20%;
-  max-height:20%;
-  padding-right: 50px;
-  padding-left: 50px;
-  padding-top: 20px;
-}
-</style>
-  
-  <head>
-    <title>
-    </title>
-  </head>
- <body>
-   <h1>Meet Our Foard Members!</h1>
-  <p1>
-  <div>
-    <img style="float: left;'/" class="resize" src="IMG_5099.jpg" alt="img"/>
-    <pre>
-         My Bonnie lies over the ocean.
-         My Bonnie lies over the sea.
-         My Bonnie lies over the ocean. 
-         Oh, bring back my Bonnie to me.
-      </pre>
-   </div>
-  </p1>
-   
-    <p2>
-  <div>
-    <img style="float: left;'/" class="resize" src="IMG_5101.jpg" alt="img"/>
-    <pre>
-         My Bonnie lies over the ocean.
-         My Bonnie lies over the sea.
-         My Bonnie lies over the ocean. 
-         Oh, bring back my Bonnie to me.
-      </pre>
-   </div>
-  </p2>
-   
-    <p3>
-  <div>
-    <img style="float: left;'/" class="resize" src="IMG_5102.jpg" alt="img"/>
-    <pre>
-         My Bonnie lies over the ocean.
-         My Bonnie lies over the sea.
-         My Bonnie lies over the ocean. 
-         Oh, bring back my Bonnie to me.
-      </pre>
-   </div>
-  </p3>
-    <p4>
-  <div>
-    <img style="float: left;'/" class="resize" src="IMG_5103.jpg" alt="img"/>
-    <pre>
-         My Bonnie lies over the ocean.
-         My Bonnie lies over the sea.
-         My Bonnie lies over the ocean. 
-         Oh, bring back my Bonnie to me.
-      </pre>
-   </div>
-  </p4>
-   
-  </body>
+  <h1> Meet our board Members!</h1>
+ <div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="IMG_5099.jpg" alt="Avatar" style="width:300px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>John Doe</h1>
+      <p>Architect & Engineer</p>
+      <p>We love that guy</p>
+    </div>
+  </div>
+</div>
 </html>
+
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: dodgerblue;
+  color: white;
+  transform: rotateY(180deg);
+}
