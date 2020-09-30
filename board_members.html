@@ -45,20 +45,65 @@ body {
   background-color:#000000;
   color: white;
   transform: rotateY(180deg);
-  padding-left: 20px;
 }
+  
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+  
 </style>
 </head>
 <body>
 
 <h1>Meet Our Coard Members</h1>
-  
-<div class="flip-card">
+<div class="row">  
+ <div class="flip-card">
   <div class="flip-card-inner">
     <div class="flip-card-front">
-      <img src="IMG_5099.jpg" alt="Avatar" style="width:300px;height:400px;">
+      <div class="column">
+      <img src="IMG_5099.jpg" alt="Claire Guang" style="width:300px;height:400px;">
     </div>
-    <div class="flip-card-back" style="padding-left: 20px">
+    <div class="flip-card-back">
+      <div class="column">
+      <h1>Claire Guang</h1> 
+      <p>Class of 2021 (Senior)</p> 
+      <p>Major: Psychology</p>
+      <p>Minor: Cognitive Science</p>
+      <pre>Fun Facts:
+- Spent third grade at a public school 
+  in China
+- Loves learning about human cognition 
+  and the various ways we process the 
+  world and language around us
+- Enjoys drawing, and spending time 
+  with friends and family
+- Has ungrounded confidence in my baking 
+  skills, typically leads to friends 
+  eating mediocre versions of various 
+  desserts.
+      </pre>     
+
+ <div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <div class="column">
+      <img src="IMG_5101.jpg" alt="Claire Guang" style="width:300px;height:400px;">
+    </div>
+    <div class="flip-card-back">
+      <div class="column">
       <h1>Claire Guang</h1> 
       <p>Class of 2021 (Senior)</p> 
       <p>Major: Psychology</p>
@@ -76,6 +121,9 @@ body {
   eating mediocre versions of various 
   desserts.
       </pre>
+</div>      
+      
+      
     </div>
   </div>
 </div>
