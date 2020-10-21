@@ -59,18 +59,18 @@
 <body>
 	<nav class = "menu">
 		<a href = "#Home">Home</a>
-		<a href = "#About ASIA">About ASIA</a>
-		<a href = "#Upcoming Events">Upcoming Events</a>
+		<a href = "#About_ASIA">About ASIA</a>
+		<a href = "#Upcoming_Events">Upcoming Events</a>
 		<a href = "#Collaborations">Collaborations</a>
-		<a href = "#Alumini Information">Alumini Information</a>
+		<a href = "#Alumini_Information">Alumini Information</a>
 	</nav>
 	
 	<div class = "content">
 		<section id="Home" class="section"><h1>Welcome to ASIA</h1></section>
-		<section id="About ASIA" class="section"><h1>About ASIA</h1></section>
-		<section id="Upcoming Events" class="section"><h1>Upcoming Events</h1></section>
+		<section id="About_ASIA" class="section"><h1>About ASIA</h1></section>
+		<section id="Upcoming_Events" class="section"><h1>Upcoming Events</h1></section>
 		<section id="Collaborations" class="section"><h1>Collaborations</h1></section>
-		<section id="Alumini Information" class="section"><h1>Alumini Information</h1></section>
+		<section id="Alumini_Information" class="section"><h1>Alumini Information</h1></section>
 	</div>
 				
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
@@ -80,7 +80,7 @@
 			$(".menu a").on('click',function(){
 				$("html, body").animate({
 					scrollTop: $($.attr(this, 'href')).offset().top
-				}, 1000);
+				}, 1500);
 			});
 		});
 	</script>
