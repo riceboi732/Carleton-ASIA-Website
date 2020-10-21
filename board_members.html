@@ -1,98 +1,257 @@
 <!DOCTYPE html>
 <html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+  
+.center {
+  margin: 0;
+  position: absolute;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+
+}
+.row {
+  display: flex;
+}
+
+.column1 {
+  flex: 33.33%;
+  padding: 5px;
+}
+  
+.column2 {
+  flex: 33.33%;
+  padding: 5px;
+}
+  
+  body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.flip-card {
+  background-color: #000000;
+  width: 100%;
+  height: 400px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: left;
+  transition: transform 1.0s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #000000;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #000000;
+  color: white;
+  transform: rotateY(180deg);
+}
+  
+</style>
+</head>
+<body style="background-color:#000000;">
+
 <div class="row">
-  <div class="column">
-    <div class="card">
-      <img src="img1.jpg" alt="Jane" style="width:100%">
-      <div class="container">
-        <h2>Jane Doe</h2>
-        <p class="title">CEO &amp; Founder</p>
-        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-        <p>example@example.com</p>
-        <p><button class="button">Contact</button></p>
-      </div>
+  <div class="column1">
+    <div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="IMG_5099.jpg" alt="Avatar" style="width:300px;height:100%;">
     </div>
-  </div>
+    <div class="flip-card-back">
+      <h1>Claire Guang</h1> 
+      <pre>
+      Class: 2021/Senior
+      Major: Psychology
+      Minors: Cognitive and Science
+      
+      Background:
+      - Grew up splitting my time between China and the US
+      - Spent third grade at a public school in China
+      
+      Hobbies:
+      - Loves learning about human cognition
+      Interested in the ways we process 
+      the world and language around us
+      
+      - Enjoys drawing, and spending time
+      with friends and family.
+      
+      - Has ungrounded confidence in baking skills
+      </pre> 
 
-  <div class="column">
-    <div class="card">
-      <img src="img2.jpg" alt="Mike" style="width:100%">
-      <div class="container">
-        <h2>Mike Ross</h2>
-        <p class="title">Art Director</p>
-        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-        <p>example@example.com</p>
-        <p><button class="button">Contact</button></p>
-      </div>
-    </div>
-  </div>
-
-  <div class="column">
-    <div class="card">
-      <img src="img3.jpg" alt="John" style="width:100%">
-      <div class="container">
-        <h2>John Doe</h2>
-        <p class="title">Designer</p>
-        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-        <p>example@example.com</p>
-        <p><button class="button">Contact</button></p>
-      </div>
     </div>
   </div>
 </div>
+  </div>
+  <div class="column1">
+   <div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="IMG_5101.jpg" alt="Avatar" style="width:300px;height:100%;">
+    </div>
+    <div class="flip-card-back">
+      <h1>Lucklita Theng</h1> 
+       <pre>
+      Class: 2023/Sophomore
+      Major: CS/CAMS  
+      Minors: Dital Humanities/Art History
+      
+      Background:
+      - Born and raised in Cambodia. 
+      - Went to school in Bangkok, Thailand 
+      - High school in Japan at UWC ISAK Japan
+      - Took a gap year and spent a semester 
+      doing Semester t Sea 
+      - Spent my time working in the start-up/social 
+      entrepreneurship industry
+      - Worked in Cambodia as a journalist
+      
+      Hobbies:
+      - Horse riding
+      - Reading
+      - Cooking dope Asian dishes
+      - Learning about other people’s background and passions
 
-<style>
-/* Three columns side by side */
-.column {
-  float: left;
-  width: 33.3%;
-  margin-bottom: 16px;
-  padding: 0 8px;
-}
+      </pre>
+    </div>
+  </div>
+</div>
+  </div>
+  <div class="column1">
+  <div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="IMG_5102.jpg" alt="Avatar" style="width:300px;height:100%;">
+    </div>
+    <div class="flip-card-back">
+      <h1>Athena Brook</h1> 
+      <pre>
+      needs information!!!
+      </pre>
+    </div>
+  </div>
+</div>
+  </div>
+</div>
+  
+<h1 style="color:white;text-align:center;">Meet Our Foard Members of 2020-2021</h1> 
+<div class="center">
+  <form>
+  <input type="button" value="Return to Homepage" onclick="history.back()" style="background-color:black;color:white;text-align:center;padding-bottom: 20px;">
+</form>
+  </div>
+  <div class="row">
+  <div class="column2">
+    <div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="IMG_5104.jpg" alt="Avatar" style="width:300px;height:100%;">
+    </div>
+    <div class="flip-card-back">
+      <h1>Bill Yang</h1> 
+      <pre>
+      Class: 202/Senior
+      Majors History and Biology
+      Minor: Ain't nobody got time for that
+      
+      Background:
+      - Born in Beijing
+      - Moved to Vancouver when I was 7 years old with my mom
+      - Moved back to Beijing with father after 
+      getting Canadian citizenship
+      - Only attended international schools
+      - Mind is a smorgasbord of Canadian, Chinese,
+      and American culture
+      - Leads Public Health Advocates at Carleton
+      - Works at the CCCE for Health and Belonging
+      - Ate fish sticks for a year (phobia of fish sticks)
+      - Threw away a passport
+      - Got stuck on a ski mountain
+      
+      Hobbies:
+      - Playing chess
+      - Chinese cooking (professional spaghetti maker)
 
-/* Display the columns below each other instead of side by side on small screens */
-@media screen and (max-width: 650px) {
-  .column {
-    width: 100%;
-    display: block;
-  }
-}
+      </pre>
+    </div>
+  </div>
+</div>
+  </div>
+  <div class="column2">
+   <div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="IMG_5105.jpg" alt="Avatar" style="width:300px;height:100%;">
+    </div>
+    <div class="flip-card-back">
+      <h1>Karen Chen</h1> 
+      <pre>
+      Class: 2021/Senior
+      Major: Environmental Studies (ENTS)
+      Minor: Ain't nobody got time for that
+      
+      Background:
+      - Parents moved from China to Milwaukee, WI as grad students 
+      - Born and raised in the Midwest
+      - Pretty much surrounded by white american culture
+      - Never learned to speak mandarin 
+      
+      Hobbies:
+      - Social-environmental justice
+      - Mental health issues
+      - Talking to other people (about Carleton stuff)
+      - Crying over youtube videos
+      - Listening to leftist podcasts
+      - Being mindful
+      - Learning about ADHD
 
-/* Add some shadows to create a card effect */
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-}
+      </pre>
+    </div>
+  </div>
+</div>
+  </div>
+  <div class="column2">
+  <div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="IMG_5106.jpg" alt="Avatar" style="width:300px;height:100%;padding: 5px 10px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>Victor Huang</h1> 
+      <p>Architect & Engineer</p> 
+      <p>We love that guy</p>
+    </div>
+  </div>
+</div>
+  </div>
+</div>
 
-/* Some left and right padding inside the container */
-.container {
-  padding: 0 16px;
-}
-
-/* Clear floats */
-.container::after, .row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-.title {
-  color: grey;
-}
-
-.button {
-  border: none;
-  outline: 0;
-  display: inline-block;
-  padding: 8px;
-  color: white;
-  background-color: #000;
-  text-align: center;
-  cursor: pointer;
-  width: 100%;
-}
-
-.button:hover {
-  background-color: #555;
-}
-</style>
+  
+</body>
 </html>
